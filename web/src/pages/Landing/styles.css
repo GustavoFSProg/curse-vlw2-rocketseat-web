@@ -44,7 +44,7 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: var(--color-text-button);
+  color: var(--color-title-in-primary);
   transition: background-color 0.4s;
 }
 
