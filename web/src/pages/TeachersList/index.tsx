@@ -22,7 +22,7 @@ export default function TeachersList() {
               <div id="linha"> </div>
               <label htmlFor="time">
                 Hora
-                <input type="text" id="time" />{' '}
+                <input type="time" id="time" />{' '}
               </label>
             </div>
           </form>
