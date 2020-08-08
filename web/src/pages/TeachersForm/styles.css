@@ -21,6 +21,14 @@
   margin-top: 6.4rem;
 }
 
+#page-teatcher-form main fieldset .input-block * .textarea-block {
+  margin-top: 2.4rem;
+}
+
+#page-teatcher-form main fieldset .select-block * .input-block {
+  margin-top: 2.4rem;
+}
+
 #page-teatcher-form main fieldset legend {
   font: 700 2.4rem Archivo;
   color: var(--color-text-title);
@@ -33,9 +41,102 @@
   border-bottom: 1px solid var(--color-line-in-white);
 }
 
-@media (min-width: 600px) {
+#page-teatcher-form main label {
+  color: grey;
+}
+
+#page-teatcher-form main footer {
+  padding: 4rem 2.4rem;
+  background: var(--color-box-footer);
+  border-top: 1px solid var(--color-line-in-white);
+  margin-top: 6.4rem;
+}
+
+#page-teatcher-form main footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--color-text-complement);
+  margin-top: -150px;
+  width: 590px;
+}
+
+#page-teatcher-form main footer p img {
+  margin-right: 2rem;
+}
+
+#page-teatcher-form main footer p #brake-line button {
+  width: 72rem;
+  height: 5.6rem;
+  color: var(--color-button-text);
+  background: var(--color-secundary);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 3.2rem;
+}
+
+#page-teatcher-form main footer button:hover {
+  background: var(--color-secundary-dark);
+}
+
+#brake-line {
+  margin-top: 200px;
+  margin-left: -400px;
+}
+
+@media (min-width: 700px) {
   #page-teatcher-form {
-    width: 100%;
+    max-width: 100vw;
     height: 100%;
+  }
+
+  #page-teatcher-form .page.header .header-content {
+    margin-bottom: 0;
+  }
+
+  #page-teatcher-form main fieldset {
+    padding: 0 6.4rem;
+  }
+
+  #page-teatcher-form main footer {
+    padding: 4rem 6.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #page-teatcher-form main footer p {
+    justify-content: space-between;
+    align-items: center;
+    width: 1570px;
+  }
+
+  #page-teatcher-form main footer p #centro {
+    /* justify-content: space-between; */
+    width: 300px;
+    margin-left: 150px;
+  }
+
+  #page-teatcher-form main footer p #centro span {
+    display: flex;
+    margin-left: 48px;
+    margin-top: -37px;
+    width: 400px;
+  }
+
+  #page-teatcher-form main footer button {
+    width: 20rem;
+    margin-top: 0;
+    margin-left: -100px;
   }
 }

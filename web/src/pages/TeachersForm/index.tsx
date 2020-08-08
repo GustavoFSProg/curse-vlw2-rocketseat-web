@@ -4,6 +4,8 @@ import Input from '../../components/Input'
 import warning from '../../assets/images/icons/warning.svg'
 
 import './styles.css'
+import Textarea from '../../components/Textarea'
+import Select from '../../components/Select'
 
 export default function TeachersForm() {
   return (
@@ -16,15 +18,33 @@ export default function TeachersForm() {
       <main>
         <fieldset>
           <legend>Seus Dados: </legend>
+
           <div className="input-block">
-            <Input name="subject" label="Nome Completo" />
+            <Input name="name" label="Nome Completo" />
           </div>
+          <div className="input-block">
+            <Select
+              name="subject"
+              label="Materia"
+              options={[
+                { value: 'Biologia', label: 'Biologia' },
+                { value: 'Matematica', label: 'Matematica' },
+                { value: 'Portugues', label: 'Portugues' },
+                { value: 'Fisica', label: 'Fisica' },
+              ]}
+            />
+          </div>
+          <br />
           <div className="input-block">
             <Input name="avatar" label="Foto" />
           </div>
 
           <div className="input-block">
             <Input name="whatsapp" label="Whatsapp" />
+          </div>
+
+          <div className="input-block">
+            <Textarea label="Biografia" name="bio" />
           </div>
         </fieldset>
 
@@ -40,10 +60,14 @@ export default function TeachersForm() {
 
         <footer>
           <p>
-            <img src={warning} alt="Aviso Importante!" />
-            Importante! <br />
-            Preencha todos os dados
-            <button type="submit">Salvar os dados</button>
+            <span id="centro">
+              <img src={warning} alt="Aviso Importante!" />
+
+              <span> Importante! Preencha todos os dados</span>
+            </span>
+            <span id="brake-line">
+              <button type="submit">Salvar Cadastro</button>
+            </span>
           </p>
         </footer>
       </main>
