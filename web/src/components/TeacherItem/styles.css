@@ -43,7 +43,7 @@
   display: block;
 }
 
-.teatcher-item footer button {
+.teatcher-item footer a {
   width: 20rem;
   height: 5.6rem;
   background: var(--color-secundary);
@@ -56,9 +56,10 @@
   align-items: center;
   justify-content: space-evenly;
   transition: 0.3s;
+  text-decoration: none;
 }
 
-.teatcher-item footer button:hover {
+.teatcher-item footer a:hover {
   background: var(--color-secundary-dark);
 }
 
@@ -89,7 +90,7 @@
     margin-left: 1.6rem;
   }
 
-  .teatcher-item footer button {
+  .teatcher-item footer a {
     width: 24.5rem;
     font-size: 1.6rem;
     justify-content: center;

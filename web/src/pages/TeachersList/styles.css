@@ -1,6 +1,6 @@
 #page-teacher-list {
   width: 100vw;
-  height: 500vh;
+  height: 200vh;
 }
 
 #search-teachers {
@@ -36,6 +36,29 @@
   font: 1.6rem Archivo;
 }
 
+#search-teachers .input-block button {
+  width: 100%;
+  height: 5.6rem;
+  color: var(--color-button-text);
+  background: var(--color-secundary);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 3rem;
+  padding: 30px;
+}
+
+#search-teachers button:hover {
+  background: var(--color-secundary-dark);
+}
+
 #search-teachers .input-block Select {
   width: 100%;
   height: 5.6rem;
@@ -62,6 +85,7 @@
 #page-teacher-list main {
   margin: 3.2rem auto;
   width: 90%;
+  height: 500px;
 }
 
 @media (min-width: 700px) {
@@ -77,10 +101,34 @@
 
   #search-teachers {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 160px;
     position: absolute;
     bottom: -44px;
+  }
+
+  #search-teachers .input-block button {
+    width: 250rem;
+    height: 5.6rem;
+    color: var(--color-button-text);
+    background: var(--color-secundary);
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    margin-top: 3rem;
+    padding: 30px;
+  }
+
+  #search-teachers button:hover {
+    background: var(--color-secundary-dark);
   }
 
   #search-teachers .input-block {
