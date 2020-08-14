@@ -17,6 +17,10 @@
   border-radius: 50%;
 }
 
+.teatcher-item #bio {
+  padding: 25px;
+}
+
 .teatcher-item header div {
   margin-left: 2.4rem;
 }

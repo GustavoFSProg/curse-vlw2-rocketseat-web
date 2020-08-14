@@ -33,7 +33,7 @@ const TeachersItem: React.FC<TeatcherItemProps> = ({ teatcher }) => {
         </div>
       </header>
 
-      <p>
+      <p id="bio">
         {teatcher.bio} <br />
       </p>
 
