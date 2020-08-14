@@ -7,7 +7,7 @@ import TeachersForm from './pages/TeachersForm'
 export default function Routes() {
   return (
     <BrowserRouter>
-      <Route path="/" exact component={Landing} />
+      <Route path="/" component={Landing} />
       <Route path="/study" component={TeacherList} />
       <Route path="/give-classes" component={TeachersForm} />
     </BrowserRouter>
