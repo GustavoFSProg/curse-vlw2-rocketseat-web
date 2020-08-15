@@ -84,12 +84,16 @@
   max-width: 890px;
 }
 
+#page-teatcher-form main footer p #container {
+  justify-content: center;
+}
+
 #page-teatcher-form main footer p img {
   margin-right: 2rem;
 }
 
-#page-teatcher-form main footer p #brake-line button {
-  width: 32rem;
+#page-teatcher-form main footer p #container button {
+  width: 32.6rem;
   height: 5.6rem;
   color: var(--color-button-text);
   background: var(--color-secundary);
@@ -103,17 +107,12 @@
   justify-content: center;
   text-decoration: none;
   transition: background-color 0.2s;
-  margin-top: -6rem;
-  margin-left: 106px;
+  margin-top: 4rem;
+  margin-left: -18px;
 }
 
 #page-teatcher-form main footer button:hover {
   background: var(--color-secundary-dark);
-}
-
-#brake-line {
-  margin-top: 200px;
-  margin-left: -400px;
 }
 
 @media (min-width: 700px) {
@@ -154,22 +153,22 @@
     width: 1570px;
   }
 
-  #page-teatcher-form main footer p #centro {
+  #page-teatcher-form main footer p #container {
     /* justify-content: space-between; */
-    width: 300px;
+    width: 100%;
     margin-left: 150px;
   }
 
-  #page-teatcher-form main footer p #centro span {
+  #page-teatcher-form main footer p #container span {
     display: flex;
     margin-left: 48px;
     margin-top: -37px;
     width: 400px;
   }
 
-  #page-teatcher-form main footer p #brake-line button {
+  #page-teatcher-form main footer p #container button {
     width: 72rem;
-    margin-top: 0;
-    margin-left: -100px;
+    margin-top: 100px;
+    margin-left: -200px;
   }
 }

@@ -219,13 +219,11 @@ export default function TeachersForm() {
 
           <footer>
             <p>
-              <div id="centro">
-                <img src={warning} alt="Aviso Importante!" />
+              <div id="container">
+                  <img src={warning} alt="Aviso Importante!" />
 
-                <span> Importante! Preencha todos os dados</span>
-              </div>
-              <div id="brake-line">
-                <button type="submit">Salvar Cadastro</button>
+                  <span> Importante! Preencha todos os dados</span>
+                  <button type="submit">Salvar Cadastro</button>
               </div>
             </p>
           </footer>
