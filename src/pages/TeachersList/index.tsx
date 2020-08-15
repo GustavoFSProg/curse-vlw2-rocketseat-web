@@ -83,7 +83,7 @@ export default function TeachersList() {
               </label>
 
               <button type="submit">
-                <span id="search">Buscar</span>
+                <span>Buscar</span>
               </button>
             </div>
           </form>
