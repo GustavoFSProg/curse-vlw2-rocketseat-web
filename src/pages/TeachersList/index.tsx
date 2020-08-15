@@ -82,9 +82,7 @@ export default function TeachersList() {
                 />{' '}
               </label>
 
-              <button type="submit">
-                <span>Buscar</span>
-              </button>
+              <button type="submit">Buscar</button>
             </div>
           </form>
         </PageHeader>
