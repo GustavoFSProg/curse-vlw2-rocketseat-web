@@ -1,16 +1,11 @@
 #page-landing {
   width: 100vw;
-  height: 100vh;
+  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--color-text-in-primary);
   background: var(--color-primary);
-}
-
-.logo-container img {
-  height: 10rem;
-  width: 30rem;
 }
 
 .hero-image {
@@ -19,7 +14,18 @@
 
 .logo-container {
   text-align: center;
-  margin-bottom: 3.2rem;
+
+  /* margin-bottom: 3.2rem; */
+  padding: 100px;
+  height: 0rem;
+  width: 30rem;
+}
+
+.logo-container img {
+  margin-top: 20px;
+  height: 8rem;
+  width: 13rem;
+  padding: 3px;
 }
 
 .logo-container h2 {
@@ -70,21 +76,37 @@
 }
 
 .total-conections {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   display: flex;
+  /* max-width: 100%; */
+  width: 150px;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   color: var(--color-text-in-primary);
+  text-align: justify;
+  margin-top: -7px;
 }
 
 .total-conections img {
   margin-left: 0.8rem;
+  width: 50px;
 }
 
 @media (min-width: 1100px) {
+  #page-landing {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-in-primary);
+    background: var(--color-primary);
+  }
+
   #page-landing-content {
     max-width: 1100px;
-
+    height: 900px;
     display: grid;
     grid-template-rows: 350px 1fr;
     grid-template-columns: 2fr 1fr 1fr;
@@ -93,11 +115,25 @@
       'buttons buttons total';
   }
 
-  .logo-container {
+  /* .logo-container {
     grid-area: logo;
     align-self: center;
     margin: 0px;
     text-align: left;
+    padding: 20px;
+  }
+   */
+  .logo-container {
+    margin-top: 350px;
+    /* margin-bottom: 3.2rem; */
+    padding: 15px;
+    height: 12rem;
+    width: 8rem;
+    justify-content: center;
+    margin-left: 280%;
+    grid-area: logo;
+    justify-content: center;
+    align-items: center;
   }
 
   .logo-container h2 {
@@ -106,8 +142,8 @@
   }
 
   .logo-container img {
-    height: 100%;
-    width: 48rem;
+    height: 97%;
+    width: 58rem;
   }
   .hero-image {
     grid-area: hero;
@@ -128,7 +164,11 @@
     margin-right: 2.4rem;
   }
   .total-conections {
+    padding: 20px;
     grid-area: total;
-    justify-self: end;
+    /* justify-content: center; */
+    margin-left: 134px;
+    font-size: 16px;
+    width: 260px;
   }
 }
